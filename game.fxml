@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="842.0" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connectfour.Controller">
+  <columnConstraints>
+    <ColumnConstraints maxWidth="640.0" minWidth="205.0" prefWidth="640.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="424.0" minWidth="10.0" prefWidth="160.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="573.0" minHeight="10.0" prefHeight="540.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscsPane" prefHeight="562.0" prefWidth="640.0" GridPane.rowIndex="1" />
+      <VBox prefHeight="560.0" prefWidth="228.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="playerOneTextField" promptText="Player One Name">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="35.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="playerTwoTextField" promptText="Player Two Name">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="3.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="setNameButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="300.0" text="Set Names">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="17.0" prefWidth="324.0" text="Player One" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="313.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children></VBox>
+   </children>
+</GridPane>
